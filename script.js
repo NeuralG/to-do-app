@@ -45,4 +45,17 @@ function main(){
     })
     
     fetchItems()
+
+    inputEl.addEventListener("keypress",function(event){
+        if (event.key === "Enter"){
+            event.preventDefault()
+            let myValue = inputEl.value
+            if (myValue){
+                addToList(count,myValue)
+                inputEl.value = ""
+            }
+        }
+    })
+
 }
+

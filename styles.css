@@ -2,17 +2,17 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
     margin: 10px auto;
     background-color: rgb(233, 233, 108);
 }
 
 .button{
+    display: block  ;
     background-color: whitesmoke;
     border: 0;
     text-align: center;
     margin-top: 30px;
-    width: 280px;
     height: 100px;
     font-size: 30px;
     padding-left: 10px;
@@ -21,6 +21,9 @@ body{
 }
 
 #input, #submit, #delete{
+    min-width: 200px;
+    max-width: 500px;
+    width: 50vw;
     color: #432000;
     background-color: #DCE1EB;
     border: 0;
